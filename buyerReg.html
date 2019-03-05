@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.css">
+    <link href="https://fonts.googleapis.com/css?family=Nobile:700" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Cheque Buyer Registration</title>
+</head>
+    
+<body>
+    <section id="toc" style="padding: 10%">
+        <h2 class="is-size-5">Please review our terms and conditions</h2>
+        <div style="font-size: 14px; color: #888888">
+            <p>By continuing to use this site, and interact with the contents, products, and or services contained here, you the End -User agrees to be bound by the terms stipulated in the <a href="legal/Master%20Services%20Agreement.pdf">Master Service Agreement</a> (the “Agreement”)</p><br>
+            <p>By continuing to use this site and for all its contents, products, and or services, The End-User hereby states that you consent to and understand the regulations contained herein and will abide by the AML/KYC/AFT terms and disclosures stated in the Agreement</p><br>
+            <p>The End-User hereby agrees to the Privacy Policy and Data Handling Compliance as mandated by the Philippine Data Privacy Act of 2012 and other relevant and related regulations, as stipulated in the Agreement</p><br>
+            <p>The End-User hereby waives the website (the “Company”) from any legal liability associated from improper or misinformed use, the End-User also acknowledges that this platform is operational as a working proof-of-concept and on an “AS IS” basis</p><br>
+        </div>
+        <label class="checkbox" style="font-family: 'Nobile', sans-serif">
+            <input id="agree" type="checkbox" onclick="check()">
+            I HAVE READ AND UNDERSTOOD THE AGREEMENT AND AGREE TO ALL THE TERMS LISTED ABOVE
+        </label><br><br>
+        <button id="continue" class="button is-large is-size-6" onclick="showForm()" disabled>Continue to signup > </button>
+    </section>
+    <section id="form" style="display: none">
+        <script src="https://static.airtable.com/js/embed/embed_snippet_v1.js"></script><iframe class="airtable-embed airtable-dynamic-height" src="https://airtable.com/embed/shrMFabQ9sPLOzmuI?backgroundColor=red" frameborder="0" onmousewheel="" width="100%" height="1101" style="background: transparent; border: 1px solid #ccc;"></iframe>
+    </section>
+</body>
+
+<footer class="footer">
+    <div class="content has-text-centered">
+        <div style="display: inline-block">
+            <img src="https://img.icons8.com/material-sharp/48/ECA41A/paycheque.png" style="height: 48px !important; float: left;">
+            <h2 class="is-size-5" style="float: right;">&nbsp;CHEQUEDISCOUNT</h2>
+        </div>
+        <div>
+            <p>Photos, icons, and illustrations by <a href="https://icons8.com">Icons8</a></p>
+            <p>All rights reserved</p>
+            <a>Disclaimer</a>
+        </div>
+    </div>
+</footer>
+    
+<script>
+    function check() {
+      var checkBox = document.getElementById("agree");
+      var cont = document.getElementById("continue");
+
+      if (checkBox.checked == true){
+        cont.disabled = false;
+      } else {
+        cont.disabled = true;
+      }
+    }
+    
+    function showForm() {
+        var checkBox = document.getElementById("agree");
+        var toc = document.getElementById("toc");
+        var form = document.getElementById("form");
+        
+        if (checkBox.checked == true){
+            toc.style.display = "none";
+            form.style.display = "block";
+        }
+    }
+</script>
+
+</html>
