@@ -1,0 +1,86 @@
+h1 {
+    font-family: 'Nobile', sans-serif;
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-family: 'Nobile', sans-serif;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.button {
+    font-family: 'Nobile', sans-serif;
+    text-transform: uppercase;
+    border-radius: 0;
+    border: none;
+}
+
+.is-outlined {
+    border: solid 1px #b0884f !important;
+    color: #b0884f;
+}
+
+.is-large {
+    background-color: #64cca2;
+    color: #fff;
+}
+
+.highlight {
+    background-color: #ffffff;
+    padding: 18px;
+    margin: 0 !important;
+}
+
+.hero {
+    background: #fce4bc;
+}
+
+.navbar {
+    background: none !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.navbar-logo {
+    font-family: 'Nobile', sans-serif;
+    font-size: 1.38rem;
+    color: #fff;
+}
+
+.reverse-row-order {
+  flex-direction: row-reverse;
+}
+
+#heroImg {
+    background-image: url(assets/money-2.jpg);
+    background-position: top;
+    background-size: cover;
+    height: 70vh;
+}
+
+.banks {
+    background: #fff;
+    text-align: center;
+}
+
+.banks img{
+    margin: 18px;
+}
+
+img.logo-stout {
+    width: 144px;
+}
+
+img.logo-long {
+    width: 224px;
+}
+
+footer {
+    color: #888888;
+}
+
+footer a {
+    color: #5b5b5b;
+}
