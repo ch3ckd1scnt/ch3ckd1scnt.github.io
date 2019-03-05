@@ -25,9 +25,6 @@
         </label><br><br>
         <button id="continue" class="button is-large is-size-6" onclick="showForm()" disabled>Continue to signup > </button>
     </section>
-    <section id="form" style="display: none">
-        <script src="https://static.airtable.com/js/embed/embed_snippet_v1.js"></script><iframe class="airtable-embed airtable-dynamic-height" src="https://airtable.com/embed/shrhK8iWv3xe6kRRj?backgroundColor=green" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>
-    </section>
 </body>
 
 <footer class="footer">
@@ -59,11 +56,9 @@
     function showForm() {
         var checkBox = document.getElementById("agree");
         var toc = document.getElementById("toc");
-        var form = document.getElementById("form");
         
         if (checkBox.checked == true){
-            toc.style.display = "none";
-            form.style.display = "block";
+            window.location.href = "https://airtable.com/shrhK8iWv3xe6kRRj"
         }
     }
 </script>
