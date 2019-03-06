@@ -77,6 +77,11 @@ img.logo-long {
     width: 224px;
 }
 
+li {
+    display: list-item;
+    list-style-type: circle;
+}
+
 footer {
     color: #888888;
 }
